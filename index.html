@@ -23,6 +23,12 @@
                 </div>
             </div>
         </div>
+ <div class="nav2">
+                <h4>Home</h4>
+                <h4>About</h4>
+                <h4>Services</h4>
+                <h4>Blog</h4>
+        </div>
 
         <div class="content">
             <div class="left">
@@ -36,9 +42,26 @@
         </div>
     </div>
 </body>
-<!-- <script type="text/javascript">
-    function refresh(t){
-        setTimeout('location.reload(true);',t)
+ <script>
+     alert('no backend connected 😉.. created by me')
+   let bar=document.querySelector('.b')
+   let nav2=document.querySelector('.nav2')
+   
+   let check=0
+   bar.addEventListener('click',function(){
+    if(check==0){
+    nav2.style.display='flex'
+   
+    // nav2.style.marginTop='30px'
+    check=1
     }
-</script> -->
+    else{
+        nav2.style.display='none'
+        
+        // nav2.style.display='block'
+
+        check=0
+    }
+   })
+</script> 
 </html>
