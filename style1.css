@@ -11,6 +11,7 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 .nav{
     background-color: #333;
@@ -65,7 +66,7 @@ font-weight: 700;
     font-size: 0.9vw;
     margin-top: 0.6vw;
     margin-bottom: 2.4vw;
-    word-spacing: 0.2vw;
+    letter-spacing: 0.2vw;
     position: relative;
 }
 .left p::after{
@@ -98,6 +99,23 @@ button{
     /* background-color: cornflowerblue; */
     height: 100%; 
 }
+.nav2{
+    background-color: #333;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     display: none; 
+    gap: 2vw;
+    color: white;
+    position: absolute;
+    z-index: 99;
+
+}
+
+
 @media (max-width:600px) {
     span{
         font-size: 2.5vw;
@@ -138,15 +156,40 @@ button{
     }
     .left p{
         font-size: 2.6vw;
-        margin-top: 1vw;
-        margin-bottom: 5vw;
+        margin-top: 1.1vw;
+        margin-bottom: 6vw;
+    }
+    .left p::after{
+        content: '';
+        width: 7vw;
+        bottom: 0;
+        left: 1px;
+        height: 2px;
+        background-color: red;
+        position: absolute;
     }
     button{
-        padding: 1vw 4vw;
+        padding: 1.5vw 4vw;
         font-size: 3vw;
+        border-radius:1vw ;
     }
     .right{
         width: 100%;
         height: 50%;
+    }
+    .nav2{
+        background-color: #333;
+        height: 45%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+        gap: 2vw;
+        color: white;
+        position: absolute;
+        z-index: 99;
+    
     }
 }
